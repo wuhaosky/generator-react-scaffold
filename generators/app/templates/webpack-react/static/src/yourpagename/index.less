@@ -1,0 +1,29 @@
+body{
+    font-family: PingFang SC,Hiragino Sans GB,Microsoft Yahei,WenQuanYi Micro Hei,sans-serif;
+    // -webkit-font-smoothing: auto;  //字体加粗
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0); //取消iphone点击的高亮态
+    word-break: break-all; //英文断行
+    // background-color: #fff !important;
+}
+
+#app{
+
+}
+
+.ellipsis{
+    white-space: nowrap;
+    word-wrap: normal;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+// 截字
+.limitText(@line){
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: @line;
+    -webkit-box-orient: vertical;
+}
+
+@import "./less/introduction.less";
