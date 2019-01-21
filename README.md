@@ -14,55 +14,59 @@
 ```
 ├── LICENSE
 ├── README.md
+├── ciconfig.json
 ├── devserver.js
 ├── dist
 │   ├── static          -- webpack打包生成的静态文件，包括js/css等
 │   └── xx.html
-├── entries
-│   └── xx.js           -- 入口js
-├── f2eci.json
 ├── html
-│   └── xx.html         -- 入口html
-├── img
-│   └── xx.jpg          -- 图片目录
-├── less
-│   ├── component
-│   └── xx.less         -- 入口less
-├── node_modules
+│   └── yourpagename.html  -- 入口html
 ├── package.json
-├── react               -- react代码
-│   ├── component       -- react模块
-│   └── page            -- react页面
-└── webpack.config.js   -- webpack配置文件
+├── src
+│   └── yourpagename
+│       ├── app.jsx
+│       ├── assets     -- 资源目录
+│       │   └── blademaster.jpg
+│       ├── component  -- react模块
+│       │   └── introduction.jsx
+│       ├── index.js   -- 入口js
+│       ├── index.less -- 入口less
+│       └── less
+│           └── introduction.less
+└── webpack.config.js  -- webpack配置文件
 ```
 
 ## react+redux 项目目录结构
 ```
 ├── LICENSE
 ├── README.md
+├── ciconfig.json
 ├── devserver.js
 ├── dist
 │   ├── static          -- webpack打包生成的静态文件，包括js/css等
 │   └── xx.html
-├── entries
-│   └── xx.js           -- 入口js
-├── f2eci.json
 ├── html
-│   └── xx.html         -- 入口html
-├── img
-│   └── xx.jpg          -- 图片目录
-├── less
-│   ├── component
-│   └── xx.less         -- 入口less
-├── node_modules
+│   └── yourpagename.html  -- 入口html
 ├── package.json
-├── react               -- react代码
-│   ├── actions         -- redux action
-│   ├── actiontype      -- redux actionType
-│   ├── component       -- react模块
-│   ├── page            -- react页面
-│   └── reducers        -- redux reducer
-└── webpack.config.js   -- webpack配置文件
+├── src
+│   └── yourpagename   -- 页面
+│       ├── actions    -- redux action
+│       │   └── index.js
+│       ├── actiontype -- redux actionType
+│       │   └── index.js
+│       ├── app.jsx
+│       ├── assets     -- 资源目录
+│       │   └── blademaster.jpg
+│       ├── component  -- react模块
+│       │   ├── inputwidget.jsx
+│       │   └── introduction.jsx
+│       ├── index.js   -- 页面入口js
+│       ├── index.less -- 入口less
+│       ├── less
+│       │   └── introduction.less
+│       └── reducers   -- redux reducer
+│           └── index.js 
+└── webpack.config.js  -- webpack配置文件
 ```
 
 ## 本地开发
